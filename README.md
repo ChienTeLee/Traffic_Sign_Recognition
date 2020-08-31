@@ -49,7 +49,7 @@ The traffic sign recognition dataset is a video of street views in Belgium, and 
 full video: https://www.youtube.com/watch?v=bYXJq5i25ng
 
 ## Slides
-[Slides](https://drive.google.com/file/d/1KDlHB9HNlobLCCqVCgajPeJvsHUhgJW4/view?usp=sharing)
+[TSR_Slides](https://drive.google.com/file/d/1Xw4RugXyNL79X0GekpVGmP4MkdYjKh0Z/view?usp=sharing)
 
 ## Reference
 1. [Traffic sign recognition—how far are we from the solution?](https://ieeexplore.ieee.org/document/6707049)
