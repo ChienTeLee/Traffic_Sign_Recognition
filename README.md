@@ -1,7 +1,7 @@
 # Traffic Sign Recognition
 
 ## Overview
-The objective of this project is to build a traffic sign recognition system to recognize traffic signs on the street. A two stage pipeline containing traffic sign detection and traffic sign classification is applied to build the system. First, we threshold red and blue color in hsv colorspace to create masks from raw images, and then we generate region crops from masks as detected traffic sign candidates. Secondly, the HOG features are extracted from region crops. Next, we use TSR training dataset to train an SVM model, and do traffic sign classification for each region crops. Finally, we plot the bounding boxes for each region crop, and show the detected traffic sign. (This project is implemented in matlab code and is only for self-practice purpose.)
+The objective of this project is to build a traffic sign recognition system to recognize traffic signs on the street. A two stage pipeline containing traffic sign detection and traffic sign classification is applied to build the system. First, we threshold red and blue color in hsv colorspace to create masks from raw images, and then we generate region crops from masks as detected traffic sign candidates. Secondly, the HOG features are extracted from region crops. Next, we use TSR training dataset to train an multiclass SVM model, and do traffic sign classification for each region crops. Finally, we plot the bounding boxes for each region crop, and show the detected traffic sign. (This project is implemented in matlab code and is only for self-practice purpose.)
 
 ## Dataset
 The traffic sign recognition dataset is a video of street views in Belgium, and the sceneray contains various belgian traffic signs. It is created and maintained by Radu Timofte and ETH-Zurich Vision Lab. In this project, we focus only on the following target traffic signs.
@@ -31,7 +31,7 @@ The traffic sign recognition dataset is a video of street views in Belgium, and 
   <img src="https://github.com/ChienTeLee/traffic_sign_recognition/blob/master/doc/fig2.png" width="55%" height="55%"> 
 </p>
 
-3. Train a linear SVM model with TSR training dataset. Use SVM model to do traffic sign classification for each region crops.
+3. Train a linear multiclass SVM model with TSR training dataset. Use the trained multiclass SVM model to do traffic sign classification for each region crops.
 <p align="center">
   <img src="https://github.com/ChienTeLee/traffic_sign_recognition/blob/master/doc/fig3.png" width="35%" height="35%"> 
 </p>
@@ -47,6 +47,9 @@ The traffic sign recognition dataset is a video of street views in Belgium, and 
 </p>
 
 full video: https://www.youtube.com/watch?v=bYXJq5i25ng
+
+## Slides
+[Slides](https://drive.google.com/file/d/1KDlHB9HNlobLCCqVCgajPeJvsHUhgJW4/view?usp=sharing)
 
 ## Reference
 1. [Traffic sign recognition—how far are we from the solution?](https://ieeexplore.ieee.org/document/6707049)
